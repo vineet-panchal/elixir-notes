@@ -76,6 +76,6 @@ defmodule part3 do
   end
 end
 
-# IO.puts Midterm.q1({1, 2, 3})
-# IO.inspect Midterm.q2([1, 2, 3, 4, 5, 6, 7])
-# IO.puts Midterm.q3([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+# IO.puts Midterm.q2({1, 2, 3})
+# IO.inspect Midterm.q3([1, 2, 3, 4, 5, 6, 7])
+# IO.puts Midterm.q4([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
