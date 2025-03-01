@@ -150,4 +150,29 @@ cond do
   temp < 100 -> "Liquid"
   true -> "Gas" # always have a catch/default call
 end
+```
+
+### case
+###### - case condition can pattern match
+```
+tup = {:ok, "Hello World"}
+case tup do
+  {:ok, result} -> result
+  {:error} -> "Uh oh!"
+  _ -> "Catch all"  # without catch all, we'd get an error if no match was found
+end
+```
+```
+# test.exs
+pi = 3.14
+IO.puts pi
+case "apple pie" do
+  pi -> IO.puts "Tasty " <> pi
+  _ -> IO.puts "#{pi} is not tasty"
+end
+
+/> elixir test.exs
+3.14
+Tasty apple pie
+```
 
