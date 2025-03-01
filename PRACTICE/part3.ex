@@ -59,6 +59,21 @@ defmodule part3 do
   end
 
   # alternate solution to q4
+  def q4(items) do 
+    q4(items, 0)
+  end
+
+  def q4([], acc) do
+    acc
+  end
+
+  def q4([head | tail], acc) when (isinteger(head)) and (rem(head, 2) == 0) do
+    q3(tail, acc + head)
+  end
+
+  def q4([ | tail], acc) do
+    q4(tail, acc)
+  end
 end
 
 # IO.puts Midterm.q1({1, 2, 3})
